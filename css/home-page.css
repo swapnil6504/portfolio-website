@@ -1,80 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
+
+#full-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#side-menu {
+    padding: 40px 20px 40px 20px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: none;
+  }
   
+  /* Add this CSS for the side menu icons */
+  .side-menu-icon {
+    width: 40px; /* Adjust the width and height as needed */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #ffba31;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Add smooth transition */
+  }
+  
+  
+  .side-menu-icon:hover {
+      transform: scale(1.2); /* Enlarge the icon on hover */
+      filter: brightness(0.8); /* Darken the icon on hover */
+  }
+  
+  /* Adjust the icon SVG styles to fill the circle properly */
+  .side-menu-icon svg {
+      width: 70%; /* Adjust the size of the SVG icon as needed */
+      height: auto;
+  }
+  
+  /* Center the text in the side menu icons */
+  .side-menu-icon span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+  }
+  
+  
+
+#all-sections {
+  height:  100vh;
+  overflow-x: auto;
+}
+
 .sections {
-    height: 100vh;
-    margin: 0 5%
+  min-height: 100vh;
+  margin: 0 2.5%;
 }
 
 #section-1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 #profile-photo {
-    object-fit: cover;
-    max-width: 50%;
-    max-height: 100%;
-    filter: saturate(0);
+  object-fit: cover;
+  max-width: 50%;
+  max-height: 100vh;
+  filter: saturate(0);
 }
 
 #basic-info {
-    padding: 20px 40px 20px 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  padding: 20px 40px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-#basic-info h2{
-    font-family: 'Borel', cursive;
-    font-weight: 400;
-    margin: 0;
-    font-size: 30px;
+#basic-info h2 {
+  font-family: "Borel", cursive;
+  font-weight: 400;
+  margin: 0;
+  font-size: 30px;
 }
 
-#basic-info h1{
-    font-family: 'Borel', cursive;
-    font-weight: 400;
-    margin: 0;
-    font-size: 35px;
+#basic-info h1 {
+  font-family: "Borel", cursive;
+  font-weight: 400;
+  margin: 0;
+  font-size: 35px;
 }
 
-#basic-info h1 #my-name{
-    font-weight: 1000;
-    font-size: 40px;
-    text-shadow: 2px 2px 5px #f9d388;
+#basic-info h1 #my-name {
+  font-weight: 1000;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px #f9d388;
 }
 
-#basic-info h1 #my-name #first-name{
-    color: #ffba31;
-    text-shadow: 2px 2px 5px #584b30;
+#basic-info h1 #my-name #first-name {
+  color: #ffba31;
+  text-shadow: 1px 1px 2px #584b30;
 }
 
-#basic-info h1{
-    font-weight: 400;
-    margin: 0;
-    font-size: 35px;
+#basic-info h1 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 35px;
 }
 
 #basic-info h3 {
-    color: black;
-    background-color: #ffba31;
-    padding: 5px 10px;
-    border-radius: 3px;
-    margin: 0;
+  color: black;
+  background-color: #ffba31;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 0;
 }
 
-#basic-info #continue-button{
-    background-color: #ffba31;
-    font-weight: 500;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 5px;
+#basic-info #resume-link {
+    text-decoration: none;
+  background-color: black;
+  font-weight: 500;
+  color: #ffba31;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+footer {
+  margin-right: 90px;
+  height: 200px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  padding: 20px 10px;
 }
