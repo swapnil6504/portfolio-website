@@ -12,6 +12,28 @@
       <ul id="side-menu">
         <span
           class="side-menu-icon"
+          id="home-icon"
+          onclick="scrollToSection('section-1')"
+          title="Home"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-home"
+          >
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+        </span>
+        <span
+          class="side-menu-icon"
           id="education-icon"
           onclick="scrollToSection('education-section')"
           title="Education"
@@ -144,8 +166,13 @@
               Ullam, a soluta. Voluptas voluptatem veniam pariatur aspernatur
               modi id quo eius?
             </p>
-            <a id="resume-link" href="../media/Swapnil_s_Resume.pdf" target="_blank">Résumé</a>
-            
+            <a
+              id="resume-link"
+              href="../media/Swapnil_s_Resume.pdf"
+              target="_blank"
+              >Résumé</a
+            >
+
             <!-- <ul id="socials">
               <span class="social-icon">
                 <svg
@@ -192,17 +219,214 @@
           <img id="profile-photo" src="../media/profilePhoto.png" />
         </section>
 
-        <section class="sections" id="education-section">
+        <section class="sections below-section" id="education-section">
+          <div class="section-titles">
+            <h1 class="main-title">EDUCATION</h1>
+            <h2 class="secondary-title">Academic Journey</h2>
+          </div>
+          <div id="education-cards-list">
+            <div class="education-card">
+              <div class="edu-info1">
+                <h3>Thapar Institute of Engineering and Technology</h3>
+                <p>Patiala, India</p>
+                <p>B.E. in Computers with current CGPA of <b>9.77/10.0</b></p>
+                <p>September 2022 - June 2026</p>
+              </div>
+              <img class="edu-photo" src="../media/tiet.jpg" />
+            </div>
 
-          <h1 class="main-title">Education</h1>
-          <h3 class="secondary Title">Academic Jourrney</h3>
-
+            <div class="education-card">
+              <img class="edu-photo" src="../media/pdav.jpg" />
+              <div class="edu-info2">
+                <h3>Police DAV Public School</h3>
+                <p>Jalandhar, India</p>
+                <p>
+                  Passed 12th standard with <b>94.4 percent</b> and 10th
+                  standard with <b>98.8 percent</b>.
+                </p>
+                <p>April 2007 - May 2022</p>
+              </div>
+            </div>
+          </div>
         </section>
-        <section class="sections" id="skills-section">SKI</section>
-        <section class="sections" id="project-section">PRO</section>
-        <section class="sections" id="experience-section">EXP</section>
-        <section class="sections" id="contact-section">CON</section>
-        <footer>footer hoon main</footer>
+
+        <!-- Inside the section with id="skills-section" -->
+        <section class="sections below-section" id="skills-section">
+          <div class="section-titles">
+            <h1 class="main-title">Skills</h1>
+            <h2 class="secondary-title">Technologies and Abilities</h2>
+          </div>
+
+          <div id="skills-list">
+            <div class="skill-category">
+              <h3>Languages</h3>
+              <ul>
+                <li>C/C++</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3>Web Development</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>ReactJS</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3>Data Analytics</h3>
+              <ul>
+                <li>MATLAB</li>
+                <li>Oracle SQL</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3>Developer Tools</h3>
+              <ul>
+                <li>VS Code</li>
+                <li>Git/GitHub</li>
+                <li>PyCharm</li>
+                <li>Google Colab</li>
+                <li>Oracle Live SQL</li>
+                <li>AutoCAD</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3>Others</h3>
+              <ul>
+                <li>Marketing</li>
+                <li>Problem Solving</li>
+                <li>Management</li>
+                <li>Writing Skills</li>
+                <li>Interpersonal Skills</li>
+                <li>Analytical Skills</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Inside the section with id="project-section" -->
+        <section class="sections below-section" id="project-section">
+          <div class="section-titles">
+            <h1 class="main-title">Projects</h1>
+            <h2 class="secondary-title">Explore My Work</h2>
+          </div>
+
+          <div class="project">
+            <h3>Project Management System</h3>
+            <p>
+              Led development team, creating a collaborative project management
+              platform, during Intra-Hackathon.
+            </p>
+            <p>
+              Designed an aesthetically pleasing and user-friendly front-end
+              design.
+            </p>
+            <p>
+              Integrated GitHub APIs for seamless collaboration and project
+              management.
+            </p>
+            <p>
+              Implemented live chatting feature using Websockets for real-time
+              communication.
+            </p>
+            <p>
+              Technologies: HTML, CSS, JS, APIs (GitHub), Websockets, PHP, Git,
+              VS Code
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>Recruitment Portal</h3>
+            <p>
+              Developed a year-long Recruitment Portal for continuous student
+              applications and society recruitments.
+            </p>
+            <p>
+              Designed user and admin front-end interfaces for seamless
+              navigation and usability.
+            </p>
+            <p>Currently in the testing phase, poised for deployment.</p>
+            <p>Technologies: HTML/CSS, ReactJS, NodeJS</p>
+          </div>
+
+          <div class="project">
+            <h3>Cartoonify</h3>
+            <p>
+              Developed Flask-based web app enabling instant image
+              cartoonification with adjustable effects, as part of the
+              Experiential Learning Centre Activity.
+            </p>
+            <p>
+              Leveraged essential libraries, like NumPy and OpenCV, to enhance
+              functionality and processing capabilities.
+            </p>
+            <p>
+              Technologies: HTML/CSS, Python, Libraries: NumPy and OpenCV,
+              Git/GitHub, VS Code
+            </p>
+          </div>
+        </section>
+
+        <!-- Inside the section with id="experience-section" -->
+        <section class="sections below-section" id="experience-section">
+          <div class="section-titles">
+            <h1 class="main-title">Experience</h1>
+            <h2 class="secondary-title">Positions of Responsibility</h2>
+          </div>
+
+          <div class="experience">
+            <h3>Creative Computing Society | Core Member</h3>
+            <p>Nov. 2022 – Present</p>
+            <p>
+              Working with a team of over a hundred students in web-development
+              and marketing domains.
+            </p>
+            <p>
+              Coordinated events like HackTU(hackathon, 1000+ participants), CP
+              Contest, RoboWars, AR Hunt, and 3D CTF.
+            </p>
+          </div>
+
+          <div class="experience">
+            <h3>
+              Echoes Club - The Student Panorama of TIET | PR and Marketing
+              Associate
+            </h3>
+            <p>Nov. 2022 – Present</p>
+            <p>
+              Led marketing team for events and club initiatives, orchestrating
+              successful campaigns.
+            </p>
+            <p>
+              Interviewed accomplished students and esteemed alumni to showcase
+              their accomplishments.
+            </p>
+          </div>
+
+          <div class="experience">
+            <h3>School’s Students’ Council | Head Boy</h3>
+            <p>Aug. 2021 – May. 2022</p>
+            <p>
+              Led Students’ Council (2021-22) of Police DAV Public School, which
+              had over 120 members.
+            </p>
+          </div>
+        </section>
+
+        <section class="sections below-section" id="contact-section">
+          <div class="section-titles">
+            <h1 class="main-title">CONTACT</h1>
+            <h2 class="secondary-title">Get in Touch</h2>
+          </div>
+
+          <!-- The rest of the content for this section -->
+        </section>
       </div>
     </div>
   </body>

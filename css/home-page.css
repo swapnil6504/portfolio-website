@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Borel&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+
+/* Colors */
+:root {
+  --primary-background: #ffefcf;
+  --primary-text: #333;
+  --secondary-text: #aaa;
+  --icon-background: #ffba31;
+  --hover-background: #f9d388;
+  --link-background: black;
+  --link-text: #ffba31;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,7 +26,7 @@ body {
 }
 
 #side-menu {
-  background-color: #ffefcf;
+  background-color: var(--primary-background);
   margin: 100px 10px;
   padding: 0 20px;
   border-radius: 50px;
@@ -21,54 +34,52 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  }
-  
-  /* Add this CSS for the side menu icons */
-  .side-menu-icon {
-    width: 40px; /* Adjust the width and height as needed */
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    text-align: center;
-    padding: 5px;
-    color: white;
-    background-color: #ffba31;
-    cursor: pointer;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Add smooth transition */
-  }
-  
-  
-  .side-menu-icon:hover {
-      transform: scale(1.2); /* Enlarge the icon on hover */
-      filter: brightness(0.8); /* Darken the icon on hover */
-  }
-  
-  /* Adjust the icon SVG styles to fill the circle properly */
-  .side-menu-icon svg {
-      width: 70%; /* Adjust the size of the SVG icon as needed */
-      height: auto;
-  }
-  
-  /* Center the text in the side menu icons */
-  .side-menu-icon span {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-  }
-  
-  
+}
+
+/* Add this CSS for the side menu icons */
+.side-menu-icon {
+  width: 40px; /* Adjust the width and height as needed */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  background-color: var(--icon-background);
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Add smooth transition */
+}
+
+.side-menu-icon:hover {
+  transform: scale(1.2); /* Enlarge the icon on hover */
+  filter: brightness(0.8); /* Darken the icon on hover */
+}
+
+/* Adjust the icon SVG styles to fill the circle properly */
+.side-menu-icon svg {
+  width: 70%; /* Adjust the size of the SVG icon as needed */
+  height: auto;
+}
+
+/* Center the text in the side menu icons */
+.side-menu-icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
 
 #all-sections {
-  height:  100vh;
+  height: 100vh;
   overflow-x: auto;
 }
 
 .sections {
   min-height: 100vh;
   margin: 0 2.5%;
+  margin-bottom: 50px;
 }
 
 #section-1 {
@@ -109,11 +120,11 @@ body {
 #basic-info h1 #my-name {
   font-weight: 1000;
   font-size: 40px;
-  text-shadow: 1px 1px 2px #f9d388;
+  text-shadow: 1px 1px 2px var(--hover-background);
 }
 
 #basic-info h1 #my-name #first-name {
-  color: #ffba31;
+  color: var(--icon-background);
   text-shadow: 1px 1px 2px #584b30;
 }
 
@@ -124,18 +135,18 @@ body {
 }
 
 #basic-info h3 {
-  color: black;
-  background-color: #ffba31;
+  color: var(--primary-text);
+  background-color: var(--icon-background);
   padding: 5px 10px;
   border-radius: 3px;
   margin: 0;
 }
 
 #basic-info #resume-link {
-    text-decoration: none;
-  background-color: black;
+  text-decoration: none;
+  background-color: var(--link-background);
   font-weight: 500;
-  color: #ffba31;
+  color: var(--link-text);
   padding: 5px 20px;
   border-radius: 5px;
 }
@@ -145,8 +156,6 @@ ul {
   padding: 0;
 }
 
-
-
 footer {
   margin-right: 90px;
   height: 200px;
@@ -154,4 +163,156 @@ footer {
   border-style: solid;
   border-width: 1px 0 0 0;
   padding: 20px 10px;
+}
+
+.section-titles {
+  padding-top: 20px;
+  position: relative;
+}
+
+.section-titles h1,
+.section-titles h2 {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.section-titles h1 {
+  letter-spacing: -6px;
+  font-size: 80px;
+  color: var(--hover-background); /* Lighter color for h1 */
+  z-index: 1; /* Make sure h1 is behind h2 */
+}
+
+.section-titles h2 {
+  position: absolute;
+  font-family: "Homemade Apple", cursive;
+  top: 55px;
+  font-size: 30px;
+  color: var(--primary-text); /* Darker color for h2 */
+  z-index: 2; /* Ensure h2 is in front of h1 */
+}
+
+#education-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust the gap between cards as needed */
+}
+
+.education-card {
+  height: 250px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edu-info1 {
+  padding: 0 5%;
+  width: 40%;
+}
+.edu-info2 {
+  text-align: right;
+  padding: 0 5%;
+  width: 50%;
+}
+
+
+
+.education-card h3 {
+  margin: 10px 0;
+  color: var(--primary-text); /* Use the primary text color you defined */
+}
+
+.education-card p {
+  margin: 5px 0;
+  color: var(--secondary-text); /* Use the secondary text color you defined */
+}
+
+.edu-photo {
+  border-radius: 8px;
+  object-fit: cover;
+  height: 100%;
+  max-width: 50%;
+}
+
+#skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-category {
+  flex: 1 1 300px; /* Adjust width as needed */
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category h3 {
+  margin-bottom: 10px;
+  color: var(--primary-text); /* Use the primary text color you defined */
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-category li {
+  margin-bottom: 5px;
+  color: var(--secondary-text); /* Use the secondary text color you defined */
+}
+
+/* Inside the <style> tag or your external CSS file */
+
+.project, .experience {
+  margin-bottom: 20px;
+}
+
+.project h3, .experience h3 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.project p, .experience p {
+  margin: 5px 0;
+}
+
+/* Style for the section-titles */
+.section-titles {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.section-titles h1, .section-titles h2 {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.section-titles h1 {
+  letter-spacing: -6px;
+  font-size: 80px;
+  color: #f9d388; /* Lighter color for h1 */
+  z-index: 1; /* Make sure h1 is behind h2 */
+}
+
+.section-titles h2 {
+  position: absolute;
+  font-family: "Homemade Apple", cursive;
+  top: 55px;
+  font-size: 30px;
+  color: #222; /* Darker color for h2 */
+  z-index: 2; /* Ensure h2 is in front of h1 */
+}
+
+#contact-section {
+  margin-bottom: 0;
 }
