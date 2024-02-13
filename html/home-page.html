@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swapnil Chhibber - Portfolio</title>
     <link rel="stylesheet" href="../css/home-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
     <script src="../script/home-page.js" defer></script>
   </head>
   <body>
+    <div class="scroll-watcher"></div>
     <button id="theme-toggle" onclick="toggleTheme()">
       <span id="icon-toggle" class="lucide lucide-sun">
         <!-- Light mode SVG icon -->
@@ -370,60 +376,87 @@
           <h1 class="main-title">Projects</h1>
           <h2 class="secondary-title">Explore My Work</h2>
         </div>
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="../media/ProManSys.png" alt="" />
+            <h3>Project Management System</h3>
+            <h5 href="github.com">Code</h5>
+            <!-- <p>
+              Led development team, creating a collaborative project management
+              platform, during Intra-Hackathon.
+            </p>
+            <p>
+              Designed an aesthetically pleasing and user-friendly front-end
+              design.
+            </p>
+            <p>
+              Integrated GitHub APIs for seamless collaboration and project
+              management.
+            </p>
+            <p>
+              Implemented live chatting feature using Websockets for real-time
+              communication.
+            </p> -->
+            <p class="tech-used">
+              Technologies: HTML, CSS, JS, APIs (GitHub), Websockets, PHP, Git,
+              VS Code
+            </p>
+          </div>
 
-        <div class="project">
-          <h3>Project Management System</h3>
-          <p>
-            Led development team, creating a collaborative project management
-            platform, during Intra-Hackathon.
-          </p>
-          <p>
-            Designed an aesthetically pleasing and user-friendly front-end
-            design.
-          </p>
-          <p>
-            Integrated GitHub APIs for seamless collaboration and project
-            management.
-          </p>
-          <p>
-            Implemented live chatting feature using Websockets for real-time
-            communication.
-          </p>
-          <p class="tech-used">
-            Technologies: HTML, CSS, JS, APIs (GitHub), Websockets, PHP, Git, VS
-            Code
-          </p>
-        </div>
+          <div class="project-card">
+            <img src="../media/SocRecPor.png" alt="" />
+            <h3>Recruitment Portal</h3>
+            <h5 href="github.com">Code</h5>
+            <!-- <p>
+              Developed a year-long Recruitment Portal for continuous student
+              applications and society recruitments.
+            </p>
+            <p>
+              Designed user and admin front-end interfaces for seamless
+              navigation and usability.
+            </p>
+            <p>Currently in the testing phase, poised for deployment.</p> -->
+            <p class="tech-used">
+              Technologies: HTML/CSS, ReactJS, NodeJS, VS Code, Git/GitHub
+            </p>
+          </div>
 
-        <div class="project">
-          <h3>Recruitment Portal</h3>
-          <p>
-            Developed a year-long Recruitment Portal for continuous student
-            applications and society recruitments.
-          </p>
-          <p>
-            Designed user and admin front-end interfaces for seamless navigation
-            and usability.
-          </p>
-          <p>Currently in the testing phase, poised for deployment.</p>
-          <p class="tech-used">Technologies: HTML/CSS, ReactJS, NodeJS</p>
-        </div>
-
-        <div class="project">
-          <h3>Cartoonify</h3>
-          <p>
-            Developed Flask-based web app enabling instant image
-            cartoonification with adjustable effects, as part of the
-            Experiential Learning Centre Activity.
-          </p>
-          <p>
-            Leveraged essential libraries, like NumPy and OpenCV, to enhance
-            functionality and processing capabilities.
-          </p>
-          <p class="tech-used">
-            Technologies: HTML/CSS, Python, Libraries: NumPy and OpenCV,
-            Git/GitHub, VS Code
-          </p>
+          <div class="project-card">
+            <img src="../media/Car.png" alt="" />
+            <h3>Cartoonify</h3>
+            <h5 href="github.com">Code</h5>
+            <!-- <p>
+              Developed Flask-based web app enabling instant image
+              cartoonification with adjustable effects, as part of the
+              Experiential Learning Centre Activity.
+            </p>
+            <p>
+              Leveraged essential libraries, like NumPy and OpenCV, to enhance
+              functionality and processing capabilities.
+            </p> -->
+            <p class="tech-used">
+              Technologies: HTML/CSS, Python, Libraries: NumPy and OpenCV,
+              Git/GitHub, VS Code
+            </p>
+          </div>
+          <div class="project-card">
+            <img src="../media/port.jpg" alt="" />
+            <h3>Portfolio</h3>
+            <h5 href="github.com">Code</h5>
+            <!-- <p>
+              Developed Flask-based web app enabling instant image
+              cartoonification with adjustable effects, as part of the
+              Experiential Learning Centre Activity.
+            </p>
+            <p>
+              Leveraged essential libraries, like NumPy and OpenCV, to enhance
+              functionality and processing capabilities.
+            </p> -->
+            <p class="tech-used">
+              Technologies: HTML/CSS, Javascript, Git/GitHub, VS Code, tensor
+              Art
+            </p>
+          </div>
         </div>
       </section>
 
@@ -481,31 +514,60 @@
 
         <div class="contact-icons">
           <div class="notch-container">
-            <div class="notch"></div>            
-          </div> 
-          <a href="https://www.linkedin.com/" target="_blank" class="icon-link">
-            <img src="../media/linkedin-icon.png" alt="LinkedIn" />
-          </a>
+            Jio True5G
+            <div class="notch"></div>
+            <div>
+              <i class="fa fa-signal" aria-hidden="true"></i> 5G <i
+                class="fa fa-battery-three-quarters"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
 
-          <a href="https://github.com/" target="_blank" class="icon-link">
-            <img src="../media/github-icon.png" alt="GitHub" />
-          </a>
+          <div id="datetime"></div>
+          <div class="icons-list">
+            <a
+              href="https://www.linkedin.com/in/swapnil-chhibber-791414238/"
+              target="_blank"
+              class="icon-link"
+            >
+              <img src="../media/linkedin-icon.png" alt="LinkedIn" />
+              <p>My LinkedIn</p>
+            </a>
 
-          <a href="mailto:your.email@example.com" class="icon-link">
-            <img src="../media/mail-icon.png" alt="Email" />
-          </a>
+            <a
+              href="https://github.com/swapnil6504"
+              target="_blank"
+              class="icon-link"
+            >
+              <img src="../media/github-icon.png" alt="GitHub" />
+              <p>My GitHub</p>
+            </a>
 
-          <a href="tel:+1234567890" class="icon-link">
-            <img src="../media/phone-icon.png" alt="Phone" />
-          </a>
+            <a href="mailto:swapnilchhibber6504@gmail.com" class="icon-link">
+              <img src="../media/mail-icon.png" alt="Email" />
+              <p>My Email</p>
+            </a>
 
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            class="icon-link"
-          >
-            <img src="../media/instagram-icon.png" alt="Instagram" />
-          </a>
+            <a href="tel:+916280055905" class="icon-link">
+              <img src="../media/phone-icon.png" alt="Phone" />
+              <p>My Phone Number</p>
+            </a>
+
+            <a
+              href="https://www.instagram.com/swapnil_chhibber"
+              target="_blank"
+              class="icon-link"
+            >
+              <img src="../media/instagram-icon.png" alt="Instagram" />
+              <p>My Instagram</p>
+            </a>
+          </div>
+
+          <div class="chin-container">
+
+            <div class="chin"></div>
+          </div>
         </div>
       </section>
 
