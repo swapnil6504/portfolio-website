@@ -180,12 +180,6 @@ body {
   text-shadow: 1px 1px 2px var(--filter-background);
 }
 
-#basic-info h1 {
-  font-weight: 400;
-  margin: 0;
-  font-size: 35px;
-}
-
 #basic-info h3 {
   color: var(--primary-text);
   background-color: var(--icon-background);
@@ -245,7 +239,6 @@ ul {
 .education-card {
   background-color: var(--card-color);
   backdrop-filter: blur(5px);
-  height: 250px;
   border: 1px solid var(--border-color);
   margin-bottom: 20px;
   border-radius: 8px;
@@ -351,7 +344,7 @@ ul {
 .project-card {
   background-color: var(--card-color);
   backdrop-filter: blur(5px);
-  max-width: 400px;
+  max-width: 300px;
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 8px;
@@ -363,16 +356,19 @@ ul {
 
 .project-card h3 {
   margin: 10px 0px;
-  font-size: 22px;
+  font-size: 18px;
 }
 .project-card h5 {
+  font-weight: 400;
+  text-decoration: underline;
   margin: 0;
-  font-size: 18px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .project-card p {
   margin: 10px 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .project-card img {
@@ -589,7 +585,7 @@ footer {
   overflow: hidden;
   position: absolute;
   z-index: -1;
-  top: -100px;
+  top: 0px;
 }
 #random-lines-2 {
   width: 100%;
@@ -629,4 +625,70 @@ footer {
   z-index: -1;
   top: 3600px;
   transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 780px) {
+  /* body {
+    background-color: lightblue;
+  } */
+  .section-titles h1 {
+    font-size: 60px;
+  }
+  .section-titles h2 {
+    font-size: 20px;
+  }
+  #section-1 {
+    flex-direction: column-reverse;
+  }
+  #basic-info {
+    padding: 10px;
+    align-items: center;
+  }
+
+  #basic-info h2 {
+    font-size: 20px;
+  }
+
+  #basic-info h1 {
+    font-size: 25px;
+  }
+
+  #basic-info h1 #my-name {
+    font-size: 25px;
+  }
+
+  #basic-info h3 {
+    text-align: center;
+  }
+  #basic-info p {
+    text-align: justify;
+  }
+
+  .edu-card1 {
+    flex-direction: column-reverse;
+  }
+  .edu-card2 {
+    flex-direction: column;
+  }
+  .edu-photo {
+    width: 100%;
+  }
+  .edu-info1,
+  .edu-info2 {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /* body {
+    background-color: lightgreen;
+  } */
+  #side-menu {
+    display: none;
+  }
+  #all-sections {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
