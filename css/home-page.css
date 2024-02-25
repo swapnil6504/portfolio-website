@@ -354,10 +354,19 @@ ul {
   justify-content: space-between;
 }
 
-.project-card h3 {
+.project-card a {
+  text-decoration: none;
+  text-decoration: underline;
+  color: var(--main-text-color);
   margin: 10px 0px;
   font-size: 18px;
+  transition: all ease 0.3s;
 }
+
+.project-card a:hover {
+  color: var(--icon-background);
+}
+
 .project-card h5 {
   font-weight: 400;
   text-decoration: underline;
