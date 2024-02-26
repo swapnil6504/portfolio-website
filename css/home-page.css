@@ -317,10 +317,20 @@ ul {
 /* Inside the <style> tag or your external CSS file */
 
 .experience {
+  position: relative;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   flex-direction: column;
   align-items: flex-start;
+}
+.experience > img {
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.25;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: blur(2px);
 }
 
 .experience h3 {
@@ -680,7 +690,7 @@ footer {
     flex-direction: column;
   }
   .edu-photo {
-    width: 100%;
+    max-width: 100%;
   }
   .edu-info1,
   .edu-info2 {
