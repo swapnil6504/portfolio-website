@@ -52,6 +52,28 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.loader {
+  background-color: white;
+  z-index: 100;
+  font-size: 20px;
+  position: fixed;
+  font-family: Consolas, monaco, monospace;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.loader-output {
+  white-space: pre-wrap;
+}
+.red-text {
+  color: red;
+}
+
 .scroll-watcher {
   height: 5px;
   position: fixed;
@@ -330,7 +352,9 @@ ul {
 }
 .experience > img {
   position: absolute;
-  height: 100%;
+  max-height: 100%;
+  max-width: 80%;
+
   z-index: -1;
   opacity: 0.25;
   left: 50%;
@@ -481,6 +505,7 @@ ul {
   border-width: 10px;
   width: 300px;
   aspect-ratio: 9/19.5;
+  margin-top: 20px;
   margin-bottom: 20px;
   box-shadow: 0 0 100px var(--box-shadow-color);
 }
@@ -682,6 +707,7 @@ footer {
 
   #basic-info h1 {
     font-size: 25px;
+    text-align: center;
   }
 
   #basic-info h1 #my-name {
