@@ -166,7 +166,6 @@ body {
   font-weight: 400;
   margin: 0;
   font-size: 35px;
-  animation: cursor 1s step-start infinite, text 5s steps(18) alternate infinite;
 }
 
 #basic-info h1 #my-name {
@@ -240,13 +239,19 @@ ul {
   background-color: var(--card-color);
   backdrop-filter: blur(5px);
   border: 1px solid var(--border-color);
-  margin-bottom: 20px;
+  margin: 20px 0px;
   border-radius: 8px;
   box-shadow: 0 0 10px var(--box-shadow-color);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px 15px var(--box-shadow-color);
 }
 
 .edu-info1 {
@@ -352,6 +357,7 @@ ul {
 }
 
 .project-card {
+  margin-top: 30px;
   background-color: var(--card-color);
   backdrop-filter: blur(5px);
   max-width: 300px;
@@ -362,13 +368,19 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px 15px var(--box-shadow-color);
 }
 
 .project-card a {
   text-decoration: none;
   text-decoration: underline;
   color: var(--main-text-color);
-  margin: 10px 0px;
+  margin: 0px 0px;
   font-size: 18px;
   transition: all ease 0.3s;
 }
