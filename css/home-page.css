@@ -52,8 +52,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.body-content {
+  display: none;
+}
+
 .loader {
-  background-color: white;
+  color: var(--background-color);
+  background-color: var(--main-text-color);
   z-index: 100;
   font-size: 20px;
   position: fixed;
@@ -70,15 +75,12 @@ body {
 .loader-output {
   white-space: pre-wrap;
 }
-.red-text {
-  color: red;
-}
 
 .scroll-watcher {
   height: 5px;
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 50;
   background-color: var(--icon-background);
   width: 100%;
   scale: 0 1;
