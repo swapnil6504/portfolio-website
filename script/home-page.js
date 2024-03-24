@@ -21,11 +21,11 @@ function printTerminalLines() {
                   document.querySelector(".loader").style.display = "none";
                   bodyContent.style.display = "block";
                 });
-              }, 1000); // Adjust delay before "Hello World" here (milliseconds)
+              }, 500); // Adjust delay before "Hello World" here (milliseconds)
             });
-          }, 1000); // Adjust delay before ". . ." here (milliseconds)
+          }, 500); // Adjust delay before ". . ." here (milliseconds)
         });
-      }, 1000); // Adjust delay before random terminal stuff here (milliseconds)
+      }, 500); // Adjust delay before random terminal stuff here (milliseconds)
     });
   }, 1000); // Adjust delay before initial message here (milliseconds)
 }
@@ -61,9 +61,9 @@ function printThreeDots(callback) {
               callback();
             }
           });
-        }, 500); // Adjust delay between each set of dots here (milliseconds)
+        }, 250); // Adjust delay between each set of dots here (milliseconds)
       });
-    }, 500); // Adjust delay before the first set of dots here (milliseconds)
+    }, 250); // Adjust delay before the first set of dots here (milliseconds)
   });
 }
 
@@ -90,7 +90,7 @@ function typeWriterEffect(text, element, callback) {
         setTimeout(() => {
           element.textContent = ""; // Clear the output before executing callback
           callback();
-        }, 500); // Delay before executing callback (milliseconds)
+        }, 250); // Delay before executing callback (milliseconds)
       }
     }
   }
