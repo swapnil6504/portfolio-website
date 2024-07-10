@@ -152,12 +152,12 @@ body {
 }
 
 .sections {
-  min-height: 100vh;
   margin: 0 2.5%;
   margin-bottom: 50px;
 }
 
 #section-1 {
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
