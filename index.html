@@ -216,6 +216,31 @@
         </span>
         <span
           class="side-menu-icon"
+          id="achievements-icon"
+          onclick="scrollToSection('achievements-section')"
+          title="Achievements"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-trophy"
+          >
+            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+            <path d="M4 22h16" />
+            <path d="M10 14.66V17c0 .55.47.98.97 1.21C11.25 18.48 11.61 18.75 12 18.75s.75-.27 1.03-.54c.5-.23.97-.66.97-1.21v-2.34" />
+            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+          </svg>
+        </span>
+        <span
+          class="side-menu-icon"
           id="contact-icon"
           onclick="scrollToSection('contact-section')"
           title="Contact"
@@ -246,11 +271,11 @@
             <h1>
               I am <i id="my-name"><i id="first-name">Swapnil</i> Chhibber</i>
             </h1>
-            <h3>Computer Engineering Undergrad</h3>
+            <h3>Computer Engineering Student</h3>
             <p>
-              I'm a Computer Engineering Undergrad exploring Web Development,
-              Data Structures and Algorithms, and other exciting new domains in
-              the field of computer science.
+              I'm a Computer Engineering student passionate about Full-Stack Development, 
+              System Programming, and Data Structures & Algorithms. I love building 
+              scalable applications and solving complex problems with modern technologies.
             </p>
             <a
               id="resume-link"
@@ -315,8 +340,14 @@
               <div class="edu-info1">
                 <h3>Thapar Institute of Engineering and Technology</h3>
                 <p>Patiala, India</p>
-                <p>B.E. in Computers with current CGPA of <b>9.77/10.0</b></p>
-                <p>September 2022 - June 2026</p>
+                <p>B.E. in Computer Engineering with current CGPA of <b>9.37/10.0</b></p>
+                <p>September 2022 - June 2026 (Expected)</p>
+                <div class="coursework">
+                  <h4>Relevant Coursework:</h4>
+                  <p>Data Structures and Algorithms, Object-Oriented Programming, Operating Systems, 
+                  DBMS, Computer Networks, Machine Learning, Software Engineering, Web Development, 
+                  Probability and Statistics</p>
+                </div>
               </div>
               <img class="edu-photo" src="./media/tiet.jpg" />
             </div>
@@ -328,7 +359,7 @@
                 <p>Jalandhar, India</p>
                 <p>
                   Passed 12th standard with <b>94.4 percent</b> and 10th
-                  standard with <b>98.8 percent</b>.
+                  standard with <b>98.8 percent (2nd in District)</b>.
                 </p>
                 <p>April 2007 - May 2022</p>
               </div>
@@ -345,12 +376,14 @@
 
           <div id="skills-list">
             <div class="skill-category">
-              <h3>Languages</h3>
+              <h3>Languages & Scripting</h3>
               <hr />
               <ul>
-                <li>C/C++</li>
-                <li>Python</li>
+                <li>C++17</li>
                 <li>JavaScript</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>PHP</li>
               </ul>
             </div>
 
@@ -358,44 +391,68 @@
               <h3>Web Development</h3>
               <hr />
               <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>ReactJS</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Tailwind CSS</li>
+                <li>Material-UI</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Django REST</li>
               </ul>
             </div>
 
             <div class="skill-category">
-              <h3>Data Analytics</h3>
+              <h3>Databases & APIs</h3>
               <hr />
               <ul>
-                <li>MATLAB</li>
-                <li>Oracle SQL</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>REST APIs</li>
+                <li>JWT</li>
+                <li>WebSockets</li>
               </ul>
             </div>
 
             <div class="skill-category">
-              <h3>Developer Tools</h3>
+              <h3>Cloud & DevOps</h3>
               <hr />
               <ul>
-                <li>VS Code</li>
+                <li>Google Cloud Platform</li>
+                <li>AWS</li>
+                <li>Cloudinary</li>
+                <li>CI/CD</li>
+                <li>Blue-Green Deployment</li>
+                <li>Docker</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3>Tools & Libraries</h3>
+              <hr />
+              <ul>
                 <li>Git/GitHub</li>
-                <li>PyCharm</li>
-                <li>Google Colab</li>
-                <li>Oracle Live SQL</li>
-                <li>AutoCAD</li>
+                <li>VS Code</li>
+                <li>Postman</li>
+                <li>CMake</li>
+                <li>Zustand</li>
+                <li>TanStack Query</li>
+                <li>Chart.js</li>
+                <li>Socket.IO</li>
               </ul>
             </div>
 
             <div class="skill-category">
-              <h3>Others</h3>
+              <h3>Practices & Others</h3>
               <hr />
               <ul>
-                <li>Marketing</li>
+                <li>Agile Methodology</li>
+                <li>Project Management</li>
+                <li>Team Collaboration</li>
+                <li>RAII Principles</li>
                 <li>Problem Solving</li>
-                <li>Management</li>
-                <li>Writing Skills</li>
-                <li>Interpersonal Skills</li>
-                <li>Analytical Skills</li>
+                <li>System Design</li>
               </ul>
             </div>
           </div>
@@ -408,33 +465,79 @@
             <h2 class="secondary-title">Explore My Work</h2>
           </div>
           <div class="projects-container">
+            <div class="project-card featured-project">
+              <img src="./media/capstone-portal.png" alt="Capstone Portal" />
+              <h3>Capstone Portal Management System</h3>
+              <div class="project-status">
+                <span class="status-badge live">Live</span>
+                <span class="status-badge ongoing">Ongoing Updates</span>
+              </div>
+              <a
+                href="https://github.com/swapnil6504/capstone-portal"
+                target="_blank"
+                >Code</a
+              >
+              <p class="project-description">
+                Built role-based student & mentor portals with Next.js 14, React 18, MUI, and TanStack Query, 
+                serving 3000+ students & 500+ faculty with real-time dashboards. Integrated JWT-auth, 
+                role-based access, multi-stage forms, and client-side validation via Django REST APIs.
+              </p>
+              <p class="tech-used">
+                Technologies: Next.js, React 18, Material UI, Docker, Django REST, JWT, TanStack Query
+              </p>
+            </div>
+
+            <div class="project-card featured-project">
+              <img src="./media/mychatapp.png" alt="MyChatApp" />
+              <h3>MyChatApp – Real-Time Chat Platform</h3>
+              <a
+                href="https://github.com/swapnil6504/MyChatApp"
+                target="_blank"
+                >Code</a
+              >
+              <p class="project-description">
+                Developed MERN-based chat app with Socket.IO, Zustand state management, and REST APIs. 
+                Achieved <100ms latency 1:1 chats for 50+ users with real-time sync & online status. 
+                Secured auth with JWT, bcrypt, HTTP-only cookies, and middleware-protected routes.
+              </p>
+              <p class="tech-used">
+                Technologies: MERN Stack, Socket.IO, Zustand, JWT, Cloudinary, Tailwind CSS, DaisyUI
+              </p>
+            </div>
+
+            <div class="project-card featured-project">
+              <img src="./media/myshell.png" alt="MyShell" />
+              <h3>MyShell – Custom Windows Shell Interface</h3>
+              <a
+                href="https://github.com/swapnil6504/MyShell"
+                target="_blank"
+                >Code</a
+              >
+              <p class="project-description">
+                Engineered a fully functional Windows shell with 8+ built-in commands, intelligent command 
+                parsing (quotes, pipes, redirection), and external process execution using CreateProcess & 
+                ShellExecute. Designed modular architecture with RAII, UTF-8 support, and enum-based console theming.
+              </p>
+              <p class="tech-used">
+                Technologies: C++17, Windows API, CMake, RAII Principles, Multi-compiler builds
+              </p>
+            </div>
+
             <div class="project-card">
               <img src="./media/ProManSys.png" alt="" />
-              <h3>Project Management System</h3>
+              <h3>Project Management Platform</h3>
               <a
                 href="https://github.com/akarsh911/TaskManager-CCS"
                 target="_blank"
                 >Code</a
               >
-              <!-- <p>
-              Led development team, creating a collaborative project management
-              platform, during Intra-Hackathon.
-            </p>
-            <p>
-              Designed an aesthetically pleasing and user-friendly front-end
-              design.
-            </p>
-            <p>
-              Integrated GitHub APIs for seamless collaboration and project
-              management.
-            </p>
-            <p>
-              Implemented live chatting feature using Websockets for real-time
-              communication.
-            </p> -->
+              <p class="project-description">
+                Architected 15+ components with vanilla JS and Chart.js, visualizing GitHub stats via 8+ 
+                chart types for 200+ users. Automated repo management using GitHub API, webhooks, and 
+                contributor workflows, cutting manual effort by 90%.
+              </p>
               <p class="tech-used">
-                Technologies: HTML, CSS, JS, APIs (GitHub), Websockets, PHP,
-                Git, VS Code
+                Technologies: JavaScript, PHP, Chart.js, WebSocket, GitHub API, ReactPHP, MySQL
               </p>
             </div>
 
@@ -447,15 +550,10 @@
               >
                 Code
               </a>
-              <!-- <p>
-              Developed a year-long Recruitment Portal for continuous student
-              applications and society recruitments.
-            </p>
-            <p>
-              Designed user and admin front-end interfaces for seamless
-              navigation and usability.
-            </p>
-            <p>Currently in the testing phase, poised for deployment.</p> -->
+              <p class="project-description">
+                Developed a year-long Recruitment Portal for continuous student applications and society 
+                recruitments. Designed user and admin front-end interfaces for seamless navigation and usability.
+              </p>
               <p class="tech-used">
                 Technologies: HTML/CSS, ReactJS, NodeJS, VS Code, Git/GitHub
               </p>
@@ -469,41 +567,31 @@
                 target="_blank"
                 >Code</a
               >
-              <!-- <p>
-              Developed Flask-based web app enabling instant image
-              cartoonification with adjustable effects, as part of the
-              Experiential Learning Centre Activity.
-            </p>
-            <p>
-              Leveraged essential libraries, like NumPy and OpenCV, to enhance
-              functionality and processing capabilities.
-            </p> -->
+              <p class="project-description">
+                Developed Flask-based web app enabling instant image cartoonification with adjustable effects, 
+                as part of the Experiential Learning Centre Activity. Leveraged essential libraries, 
+                like NumPy and OpenCV, to enhance functionality and processing capabilities.
+              </p>
               <p class="tech-used">
-                Technologies: HTML/CSS, Python, Libraries: NumPy and OpenCV,
-                Git/GitHub, VS Code
+                Technologies: HTML/CSS, Python, Libraries: NumPy and OpenCV, Git/GitHub, VS Code
               </p>
             </div>
+
             <div class="project-card">
               <img src="./media/port.jpg" alt="" />
-              <h3>Portfolio</h3>
+              <h3>Portfolio Website</h3>
               <a
                 href="https://github.com/swapnil6504/portfolio-website"
                 target="_blank"
               >
                 Code
               </a>
-              <!-- <p>
-              Developed Flask-based web app enabling instant image
-              cartoonification with adjustable effects, as part of the
-              Experiential Learning Centre Activity.
-            </p>
-            <p>
-              Leveraged essential libraries, like NumPy and OpenCV, to enhance
-              functionality and processing capabilities.
-            </p> -->
+              <p class="project-description">
+                Personal portfolio website showcasing projects, skills, and experience with responsive design 
+                and interactive elements. Features dark/light mode toggle and smooth scrolling navigation.
+              </p>
               <p class="tech-used">
-                Technologies: HTML/CSS, Javascript, Git/GitHub, VS Code, tensor
-                Art
+                Technologies: HTML/CSS, Javascript, Git/GitHub, VS Code
               </p>
             </div>
           </div>
@@ -518,15 +606,15 @@
 
           <div class="experience">
             <img src="./media/ccs-logo.png" />
-            <h3>Creative Computing Society | Core Member</h3>
+            <h3>Creative Computing Society | Executive Board Advisor</h3>
             <p>Nov. 2022 – Present</p>
             <p>
-              Working with a team of over a hundred students in web-development
-              and marketing domains.
+              Lead a team of 200+ students across web development and marketing domains 
+              for technical society initiatives.
             </p>
             <p>
-              Coordinated events like HackTU(hackathon, 1000+ participants), CP
-              Contest, RoboWars, AR Hunt, and 3D CTF.
+              Coordinated 5+ major events including HackTU (Official MLH hackathon, 2500+ participants), 
+              competitive programming contests, and technical workshops.
             </p>
           </div>
 
@@ -558,6 +646,45 @@
           </div>
         </section>
 
+        <section class="sections below-section" id="achievements-section">
+          <div class="section-titles">
+            <h1 class="main-title">Achievements</h1>
+            <h2 class="secondary-title">Recognition & Awards</h2>
+          </div>
+
+          <div class="achievements-container">
+            <div class="achievement-card">
+              <div class="achievement-icon">🏆</div>
+              <h3>Academic Excellence Scholarship</h3>
+              <p>Awarded INR 6.5 Lakhs academic scholarship for outstanding academic performance at TIET.</p>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-icon">🥇</div>
+              <h3>Competitive Programming Champion</h3>
+              <p>Secured 1st place in CCS Intra-Society Competitive Programming Contest among 50+ participants; won INR 5,000.</p>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-icon">💻</div>
+              <h3>LeetCode Problem Solver</h3>
+              <p>Solved 350+ LeetCode problems and achieved 7+ badges across data structures and algorithms topics.</p>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-icon">☁️</div>
+              <h3>Google Cloud Certified</h3>
+              <p>Earned Google Cloud Skills Badge for completing Introduction to Generative AI certification.</p>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-icon">📊</div>
+              <h3>Academic Performance</h3>
+              <p>Maintained CGPA of 9.37/10.0 and secured 2nd position in district during Class X examinations.</p>
+            </div>
+          </div>
+        </section>
+
         <section class="sections below-section" id="contact-section">
           <div class="section-titles">
             <h1 class="main-title">CONTACT</h1>
@@ -577,7 +704,7 @@
             <div id="datetime"></div>
             <div class="icons-list">
               <a
-                href="https://www.linkedin.com/in/swapnil-chhibber-791414238/"
+                href="https://www.linkedin.com/in/swapnil-chhibber"
                 target="_blank"
                 class="icon-link"
               >
@@ -592,6 +719,15 @@
               >
                 <img src="./media/github-icon.png" alt="GitHub" />
                 <p>My GitHub</p>
+              </a>
+
+              <a
+                href="https://leetcode.com/swapnil6504"
+                target="_blank"
+                class="icon-link"
+              >
+                <img src="./media/leetcode-icon.png" alt="LeetCode" />
+                <p>My LeetCode</p>
               </a>
 
               <a href="mailto:swapnilchhibber6504@gmail.com" class="icon-link">
@@ -621,8 +757,8 @@
         </section>
 
         <footer>
-          Made with ❤️ by Swapnil Chhbber <br />
-          © Copyright 2023. All Rights are Reserved.
+          Made with ❤️ by Swapnil Chhibber <br />
+          © Copyright 2025. All Rights are Reserved.
         </footer>
       </div>
 
@@ -632,41 +768,33 @@
           version="1.1"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           xmlns:svgjs="http://svgjs.dev/svgjs"
-          width="2560"
-          height="1000"
+          width="100%"
+          height="100%"
           preserveAspectRatio="none"
-          viewBox="0 0 2560 1000"
+          viewBox="0 0 1920 1080"
         >
           <g mask='url("#SvgjsMask1100")' fill="none">
             <path
-              d="M -474.45476859170884,188 C -303.65,266.8 37.95,536 379.54523140829116,582 C 721.15,628 891.95,410.8 1233.545231408291,418 C 1575.15,425.2 1745.95,606.8 2087.5452314082913,618 C 2429.15,629.2 2847.05,488.2 2941.5452314082913,474 C 3036.04,459.8 2636.31,532.4 2560,547"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
+              d="M0,400 Q480,350 960,400 T1920,400 L1920,1080 L0,1080 Z"
+              stroke="none"
+              fill="rgba(212, 155, 42, 0.2)"
+            />
             <path
-              d="M -1361.0257442456343,293 C -1190.23,395.6 -848.63,822.8 -507.0257442456343,806 C -165.43,789.2 5.37,263.6 346.9742557543657,209 C 688.57,154.4 859.37,522.6 1200.9742557543657,533 C 1542.57,543.4 1783.17,267 2054.974255754366,261 C 2326.78,255 2458.99,454.6 2560,503"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
+              d="M0,500 Q480,450 960,500 T1920,500"
+              stroke="rgba(212, 155, 42, 0.6)"
+              stroke-width="4"
+              fill="none"
+            />
             <path
-              d="M -1472.2534729041715,529 C -1301.45,478.2 -959.85,236.6 -618.2534729041715,275 C -276.65,313.4 -105.85,727.8 235.74652709582847,721 C 577.35,714.2 748.15,240.6 1089.7465270958285,241 C 1431.35,241.4 1649.7,743.6 1943.7465270958285,723 C 2237.8,702.4 2436.75,255 2560,138"
-              stroke="rgba(255, 225, 164, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -1116.9889442965846,449 C -946.19,538.4 -604.59,900.2 -262.9889442965845,896 C 78.61,891.8 249.41,499.4 591.0110557034154,428 C 932.61,356.6 1103.41,582 1445.0110557034154,539 C 1786.61,496 2076.01,173.4 2299.0110557034154,213 C 2522.01,252.6 2507.8,632.2 2560,737"
-              stroke="rgba(125, 83, 0, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -441.4482946327523,729 C -270.65,634.2 70.95,247.6 412.5517053672477,255 C 754.15,262.4 924.95,790 1266.5517053672477,766 C 1608.15,742 1778.95,151.8 2120.5517053672475,135 C 2462.15,118.2 2886.66,648.8 2974.5517053672475,682 C 3062.44,715.2 2642.91,377.2 2560,301"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
+              d="M0,600 Q480,550 960,600 T1920,600"
+              stroke="rgba(255, 225, 164, 0.5)"
+              stroke-width="5"
+              fill="none"
+            />
           </g>
           <defs>
             <mask id="SvgjsMask1100">
-              <rect width="2560" height="1000" fill="#ffffff"></rect>
+              <rect width="1920" height="1080" fill="#ffffff"></rect>
             </mask>
           </defs>
         </svg>
@@ -677,41 +805,27 @@
           version="1.1"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           xmlns:svgjs="http://svgjs.dev/svgjs"
-          width="2560"
-          height="1000"
+          width="100%"
+          height="100%"
           preserveAspectRatio="none"
-          viewBox="0 0 2560 1000"
+          viewBox="0 0 1920 1080"
         >
-          <g mask='url("#SvgjsMask1100")' fill="none">
+          <g mask='url("#SvgjsMask1101")' fill="none">
             <path
-              d="M -474.45476859170884,188 C -303.65,266.8 37.95,536 379.54523140829116,582 C 721.15,628 891.95,410.8 1233.545231408291,418 C 1575.15,425.2 1745.95,606.8 2087.5452314082913,618 C 2429.15,629.2 2847.05,488.2 2941.5452314082913,474 C 3036.04,459.8 2636.31,532.4 2560,547"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
+              d="M0,300 Q480,250 960,300 T1920,300 L1920,1080 L0,1080 Z"
+              stroke="none"
+              fill="rgba(125, 83, 0, 0.15)"
+            />
             <path
-              d="M -1361.0257442456343,293 C -1190.23,395.6 -848.63,822.8 -507.0257442456343,806 C -165.43,789.2 5.37,263.6 346.9742557543657,209 C 688.57,154.4 859.37,522.6 1200.9742557543657,533 C 1542.57,543.4 1783.17,267 2054.974255754366,261 C 2326.78,255 2458.99,454.6 2560,503"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -1472.2534729041715,529 C -1301.45,478.2 -959.85,236.6 -618.2534729041715,275 C -276.65,313.4 -105.85,727.8 235.74652709582847,721 C 577.35,714.2 748.15,240.6 1089.7465270958285,241 C 1431.35,241.4 1649.7,743.6 1943.7465270958285,723 C 2237.8,702.4 2436.75,255 2560,138"
-              stroke="rgba(255, 225, 164, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -1116.9889442965846,449 C -946.19,538.4 -604.59,900.2 -262.9889442965845,896 C 78.61,891.8 249.41,499.4 591.0110557034154,428 C 932.61,356.6 1103.41,582 1445.0110557034154,539 C 1786.61,496 2076.01,173.4 2299.0110557034154,213 C 2522.01,252.6 2507.8,632.2 2560,737"
-              stroke="rgba(125, 83, 0, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -441.4482946327523,729 C -270.65,634.2 70.95,247.6 412.5517053672477,255 C 754.15,262.4 924.95,790 1266.5517053672477,766 C 1608.15,742 1778.95,151.8 2120.5517053672475,135 C 2462.15,118.2 2886.66,648.8 2974.5517053672475,682 C 3062.44,715.2 2642.91,377.2 2560,301"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
+              d="M0,200 Q480,150 960,200 T1920,200"
+              stroke="rgba(212, 155, 42, 0.5)"
+              stroke-width="4"
+              fill="none"
+            />
           </g>
           <defs>
-            <mask id="SvgjsMask1100">
-              <rect width="2560" height="1000" fill="#ffffff"></rect>
+            <mask id="SvgjsMask1101">
+              <rect width="1920" height="1080" fill="#ffffff"></rect>
             </mask>
           </defs>
         </svg>
@@ -723,41 +837,28 @@
           version="1.1"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           xmlns:svgjs="http://svgjs.dev/svgjs"
-          width="2560"
-          height="1000"
+          width="100%"
+          height="100%"
           preserveAspectRatio="none"
-          viewBox="0 0 2560 1000"
+          viewBox="0 0 1920 1080"
         >
-          <g mask='url("#SvgjsMask1100")' fill="none">
+          <g mask='url("#SvgjsMask1102")' fill="none">
             <path
-              d="M -474.45476859170884,188 C -303.65,266.8 37.95,536 379.54523140829116,582 C 721.15,628 891.95,410.8 1233.545231408291,418 C 1575.15,425.2 1745.95,606.8 2087.5452314082913,618 C 2429.15,629.2 2847.05,488.2 2941.5452314082913,474 C 3036.04,459.8 2636.31,532.4 2560,547"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
+              d="M0,700 Q480,650 960,700 T1920,700"
+              stroke="rgba(255, 225, 164, 0.6)"
+              stroke-width="4"
+              fill="none"
+            />
             <path
-              d="M -1361.0257442456343,293 C -1190.23,395.6 -848.63,822.8 -507.0257442456343,806 C -165.43,789.2 5.37,263.6 346.9742557543657,209 C 688.57,154.4 859.37,522.6 1200.9742557543657,533 C 1542.57,543.4 1783.17,267 2054.974255754366,261 C 2326.78,255 2458.99,454.6 2560,503"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -1472.2534729041715,529 C -1301.45,478.2 -959.85,236.6 -618.2534729041715,275 C -276.65,313.4 -105.85,727.8 235.74652709582847,721 C 577.35,714.2 748.15,240.6 1089.7465270958285,241 C 1431.35,241.4 1649.7,743.6 1943.7465270958285,723 C 2237.8,702.4 2436.75,255 2560,138"
-              stroke="rgba(255, 225, 164, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -1116.9889442965846,449 C -946.19,538.4 -604.59,900.2 -262.9889442965845,896 C 78.61,891.8 249.41,499.4 591.0110557034154,428 C 932.61,356.6 1103.41,582 1445.0110557034154,539 C 1786.61,496 2076.01,173.4 2299.0110557034154,213 C 2522.01,252.6 2507.8,632.2 2560,737"
-              stroke="rgba(125, 83, 0, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -441.4482946327523,729 C -270.65,634.2 70.95,247.6 412.5517053672477,255 C 754.15,262.4 924.95,790 1266.5517053672477,766 C 1608.15,742 1778.95,151.8 2120.5517053672475,135 C 2462.15,118.2 2886.66,648.8 2974.5517053672475,682 C 3062.44,715.2 2642.91,377.2 2560,301"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
+              d="M0,800 Q480,750 960,800 T1920,800"
+              stroke="rgba(212, 155, 42, 0.5)"
+              stroke-width="5"
+              fill="none"
+            />
           </g>
           <defs>
-            <mask id="SvgjsMask1100">
-              <rect width="2560" height="1000" fill="#ffffff"></rect>
+            <mask id="SvgjsMask1102">
+              <rect width="1920" height="1080" fill="#ffffff"></rect>
             </mask>
           </defs>
         </svg>
@@ -768,41 +869,27 @@
           version="1.1"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           xmlns:svgjs="http://svgjs.dev/svgjs"
-          width="2560"
-          height="1000"
+          width="100%"
+          height="100%"
           preserveAspectRatio="none"
-          viewBox="0 0 2560 1000"
+          viewBox="0 0 1920 1080"
         >
-          <g mask='url("#SvgjsMask1100")' fill="none">
+          <g mask='url("#SvgjsMask1103")' fill="none">
             <path
-              d="M -474.45476859170884,188 C -303.65,266.8 37.95,536 379.54523140829116,582 C 721.15,628 891.95,410.8 1233.545231408291,418 C 1575.15,425.2 1745.95,606.8 2087.5452314082913,618 C 2429.15,629.2 2847.05,488.2 2941.5452314082913,474 C 3036.04,459.8 2636.31,532.4 2560,547"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
+              d="M0,450 Q480,400 960,450 T1920,450"
+              stroke="rgba(125, 83, 0, 0.5)"
+              stroke-width="4"
+              fill="none"
+            />
             <path
-              d="M -1361.0257442456343,293 C -1190.23,395.6 -848.63,822.8 -507.0257442456343,806 C -165.43,789.2 5.37,263.6 346.9742557543657,209 C 688.57,154.4 859.37,522.6 1200.9742557543657,533 C 1542.57,543.4 1783.17,267 2054.974255754366,261 C 2326.78,255 2458.99,454.6 2560,503"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -1472.2534729041715,529 C -1301.45,478.2 -959.85,236.6 -618.2534729041715,275 C -276.65,313.4 -105.85,727.8 235.74652709582847,721 C 577.35,714.2 748.15,240.6 1089.7465270958285,241 C 1431.35,241.4 1649.7,743.6 1943.7465270958285,723 C 2237.8,702.4 2436.75,255 2560,138"
-              stroke="rgba(255, 225, 164, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -1116.9889442965846,449 C -946.19,538.4 -604.59,900.2 -262.9889442965845,896 C 78.61,891.8 249.41,499.4 591.0110557034154,428 C 932.61,356.6 1103.41,582 1445.0110557034154,539 C 1786.61,496 2076.01,173.4 2299.0110557034154,213 C 2522.01,252.6 2507.8,632.2 2560,737"
-              stroke="rgba(125, 83, 0, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -441.4482946327523,729 C -270.65,634.2 70.95,247.6 412.5517053672477,255 C 754.15,262.4 924.95,790 1266.5517053672477,766 C 1608.15,742 1778.95,151.8 2120.5517053672475,135 C 2462.15,118.2 2886.66,648.8 2974.5517053672475,682 C 3062.44,715.2 2642.91,377.2 2560,301"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
+              d="M0,350 Q480,300 960,350 T1920,350 L1920,1080 L0,1080 Z"
+              stroke="none"
+              fill="rgba(255, 225, 164, 0.12)"
+            />
           </g>
           <defs>
-            <mask id="SvgjsMask1100">
-              <rect width="2560" height="1000" fill="#ffffff"></rect>
+            <mask id="SvgjsMask1103">
+              <rect width="1920" height="1080" fill="#ffffff"></rect>
             </mask>
           </defs>
         </svg>
@@ -814,41 +901,28 @@
           version="1.1"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           xmlns:svgjs="http://svgjs.dev/svgjs"
-          width="2560"
-          height="1000"
+          width="100%"
+          height="100%"
           preserveAspectRatio="none"
-          viewBox="0 0 2560 1000"
+          viewBox="0 0 1920 1080"
         >
-          <g mask='url("#SvgjsMask1100")' fill="none">
+          <g mask='url("#SvgjsMask1104")' fill="none">
             <path
-              d="M -474.45476859170884,188 C -303.65,266.8 37.95,536 379.54523140829116,582 C 721.15,628 891.95,410.8 1233.545231408291,418 C 1575.15,425.2 1745.95,606.8 2087.5452314082913,618 C 2429.15,629.2 2847.05,488.2 2941.5452314082913,474 C 3036.04,459.8 2636.31,532.4 2560,547"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
+              d="M0,900 Q480,850 960,900 T1920,900"
+              stroke="rgba(212, 155, 42, 0.7)"
+              stroke-width="3"
+              fill="none"
+            />
             <path
-              d="M -1361.0257442456343,293 C -1190.23,395.6 -848.63,822.8 -507.0257442456343,806 C -165.43,789.2 5.37,263.6 346.9742557543657,209 C 688.57,154.4 859.37,522.6 1200.9742557543657,533 C 1542.57,543.4 1783.17,267 2054.974255754366,261 C 2326.78,255 2458.99,454.6 2560,503"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -1472.2534729041715,529 C -1301.45,478.2 -959.85,236.6 -618.2534729041715,275 C -276.65,313.4 -105.85,727.8 235.74652709582847,721 C 577.35,714.2 748.15,240.6 1089.7465270958285,241 C 1431.35,241.4 1649.7,743.6 1943.7465270958285,723 C 2237.8,702.4 2436.75,255 2560,138"
-              stroke="rgba(255, 225, 164, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -1116.9889442965846,449 C -946.19,538.4 -604.59,900.2 -262.9889442965845,896 C 78.61,891.8 249.41,499.4 591.0110557034154,428 C 932.61,356.6 1103.41,582 1445.0110557034154,539 C 1786.61,496 2076.01,173.4 2299.0110557034154,213 C 2522.01,252.6 2507.8,632.2 2560,737"
-              stroke="rgba(125, 83, 0, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -441.4482946327523,729 C -270.65,634.2 70.95,247.6 412.5517053672477,255 C 754.15,262.4 924.95,790 1266.5517053672477,766 C 1608.15,742 1778.95,151.8 2120.5517053672475,135 C 2462.15,118.2 2886.66,648.8 2974.5517053672475,682 C 3062.44,715.2 2642.91,377.2 2560,301"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
+              d="M0,950 Q480,900 960,950 T1920,950"
+              stroke="rgba(255, 225, 164, 0.6)"
+              stroke-width="4"
+              fill="none"
+            />
           </g>
           <defs>
-            <mask id="SvgjsMask1100">
-              <rect width="2560" height="1000" fill="#ffffff"></rect>
+            <mask id="SvgjsMask1104">
+              <rect width="1920" height="1080" fill="#ffffff"></rect>
             </mask>
           </defs>
         </svg>
@@ -859,41 +933,27 @@
           version="1.1"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           xmlns:svgjs="http://svgjs.dev/svgjs"
-          width="2560"
-          height="1000"
+          width="100%"
+          height="100%"
           preserveAspectRatio="none"
-          viewBox="0 0 2560 1000"
+          viewBox="0 0 1920 1080"
         >
-          <g mask='url("#SvgjsMask1100")' fill="none">
+          <g mask='url("#SvgjsMask1105")' fill="none">
             <path
-              d="M -474.45476859170884,188 C -303.65,266.8 37.95,536 379.54523140829116,582 C 721.15,628 891.95,410.8 1233.545231408291,418 C 1575.15,425.2 1745.95,606.8 2087.5452314082913,618 C 2429.15,629.2 2847.05,488.2 2941.5452314082913,474 C 3036.04,459.8 2636.31,532.4 2560,547"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
+              d="M0,150 Q480,100 960,150 T1920,150"
+              stroke="rgba(125, 83, 0, 0.6)"
+              stroke-width="4"
+              fill="none"
+            />
             <path
-              d="M -1361.0257442456343,293 C -1190.23,395.6 -848.63,822.8 -507.0257442456343,806 C -165.43,789.2 5.37,263.6 346.9742557543657,209 C 688.57,154.4 859.37,522.6 1200.9742557543657,533 C 1542.57,543.4 1783.17,267 2054.974255754366,261 C 2326.78,255 2458.99,454.6 2560,503"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -1472.2534729041715,529 C -1301.45,478.2 -959.85,236.6 -618.2534729041715,275 C -276.65,313.4 -105.85,727.8 235.74652709582847,721 C 577.35,714.2 748.15,240.6 1089.7465270958285,241 C 1431.35,241.4 1649.7,743.6 1943.7465270958285,723 C 2237.8,702.4 2436.75,255 2560,138"
-              stroke="rgba(255, 225, 164, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -1116.9889442965846,449 C -946.19,538.4 -604.59,900.2 -262.9889442965845,896 C 78.61,891.8 249.41,499.4 591.0110557034154,428 C 932.61,356.6 1103.41,582 1445.0110557034154,539 C 1786.61,496 2076.01,173.4 2299.0110557034154,213 C 2522.01,252.6 2507.8,632.2 2560,737"
-              stroke="rgba(125, 83, 0, 0.2)"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M -441.4482946327523,729 C -270.65,634.2 70.95,247.6 412.5517053672477,255 C 754.15,262.4 924.95,790 1266.5517053672477,766 C 1608.15,742 1778.95,151.8 2120.5517053672475,135 C 2462.15,118.2 2886.66,648.8 2974.5517053672475,682 C 3062.44,715.2 2642.91,377.2 2560,301"
-              stroke="rgba(212, 155, 42, 0.2)"
-              stroke-width="2"
-            ></path>
+              d="M0,250 Q480,200 960,250 T1920,250 L1920,1080 L0,1080 Z"
+              stroke="none"
+              fill="rgba(212, 155, 42, 0.1)"
+            />
           </g>
           <defs>
-            <mask id="SvgjsMask1100">
-              <rect width="2560" height="1000" fill="#ffffff"></rect>
+            <mask id="SvgjsMask1105">
+              <rect width="1920" height="1080" fill="#ffffff"></rect>
             </mask>
           </defs>
         </svg>

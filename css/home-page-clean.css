@@ -269,9 +269,8 @@ ul {
   border: 2px solid rgba(255, 255, 255, 0.3);
   margin: 20px 0px;
   border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 
-              0 2px 8px rgba(0, 0, 0, 0.1),
-              inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -281,9 +280,8 @@ ul {
 
 .education-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), 
-              0 4px 16px rgba(0, 0, 0, 0.2),
-              inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 .edu-info1 {
@@ -322,9 +320,8 @@ ul {
   border-radius: 10px;
   border: 2px solid rgba(255, 186, 49, 0.3);
   border-left: 4px solid var(--icon-background);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), 
-              0 1px 4px rgba(0, 0, 0, 0.1),
-              inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .coursework h4 {
@@ -355,17 +352,15 @@ ul {
   border: 2px solid rgba(255, 255, 255, 0.4);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), 
-              0 2px 8px rgba(0, 0, 0, 0.1),
-              inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-category:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 
-              0 4px 12px rgba(0, 0, 0, 0.15),
-              inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .skill-category h3 {
@@ -406,9 +401,8 @@ ul {
   border: 2px solid rgba(255, 255, 255, 0.3);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), 
-              0 2px 8px rgba(0, 0, 0, 0.1),
-              inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -417,9 +411,8 @@ ul {
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35), 
-              0 4px 16px rgba(0, 0, 0, 0.15),
-              inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35), 0 4px 16px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 .project-card a {
@@ -471,13 +464,16 @@ ul {
 
 .featured-project {
   border: 3px solid var(--icon-background);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 239, 207, 0.9));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 239, 207, 0.9)
+  );
   backdrop-filter: blur(25px);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 
-              0 4px 16px rgba(0, 0, 0, 0.15),
-              inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .featured-project::before {
@@ -564,17 +560,15 @@ ul {
   padding: 25px;
   text-align: center;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), 
-              0 2px 8px rgba(0, 0, 0, 0.1),
-              inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .achievement-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 
-              0 4px 12px rgba(0, 0, 0, 0.15),
-              inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 .achievement-icon {
@@ -809,7 +803,8 @@ footer {
 }
 
 @keyframes wave-animation {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(0) translateY(0) scale(1) rotate(0deg);
   }
   25% {
@@ -824,7 +819,8 @@ footer {
 }
 
 @keyframes wave-animation-reverse {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(0) translateY(0) scale(1) rotate(0deg);
   }
   25% {
@@ -842,73 +838,67 @@ footer {
 .dark-mode .education-card {
   background-color: rgba(0, 0, 0, 0.7);
   border: 2px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1), 
-              0 2px 8px rgba(255, 255, 255, 0.05),
-              inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1),
+    0 2px 8px rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .dark-mode .education-card:hover {
-  box-shadow: 0 16px 48px rgba(255, 255, 255, 0.15), 
-              0 4px 16px rgba(255, 255, 255, 0.1),
-              inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: 0 16px 48px rgba(255, 255, 255, 0.15),
+    0 4px 16px rgba(255, 255, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .dark-mode .skill-category {
   background-color: rgba(0, 0, 0, 0.6);
   border: 2px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1), 
-              0 2px 8px rgba(255, 255, 255, 0.05),
-              inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1),
+    0 2px 8px rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .dark-mode .skill-category:hover {
-  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.15), 
-              0 4px 12px rgba(255, 255, 255, 0.08),
-              inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.15),
+    0 4px 12px rgba(255, 255, 255, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .dark-mode .project-card {
   background-color: rgba(0, 0, 0, 0.7);
   border: 2px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1), 
-              0 2px 8px rgba(255, 255, 255, 0.05),
-              inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1),
+    0 2px 8px rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .dark-mode .project-card:hover {
-  box-shadow: 0 16px 48px rgba(255, 255, 255, 0.15), 
-              0 4px 16px rgba(255, 255, 255, 0.08),
-              inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: 0 16px 48px rgba(255, 255, 255, 0.15),
+    0 4px 16px rgba(255, 255, 255, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .dark-mode .achievement-card {
   background: rgba(0, 0, 0, 0.7);
   border: 2px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1), 
-              0 2px 8px rgba(255, 255, 255, 0.05),
-              inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1),
+    0 2px 8px rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .dark-mode .achievement-card:hover {
-  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.15), 
-              0 4px 12px rgba(255, 255, 255, 0.08),
-              inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.15),
+    0 4px 12px rgba(255, 255, 255, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .dark-mode .coursework {
   background-color: rgba(0, 0, 0, 0.6);
   border: 2px solid rgba(120, 90, 30, 0.4);
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.08), 
-              0 1px 4px rgba(255, 255, 255, 0.05),
-              inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.08),
+    0 1px 4px rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .dark-mode .featured-project {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(120, 90, 30, 0.3));
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(120, 90, 30, 0.3)
+  );
   border: 3px solid #785a1e;
-  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.1), 
-              0 4px 16px rgba(255, 255, 255, 0.08),
-              inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.1),
+    0 4px 16px rgba(255, 255, 255, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -922,9 +912,10 @@ footer {
   #random-lines-6 {
     animation-duration: 30s;
   }
-  
+
   @keyframes wave-animation {
-    0%, 100% {
+    0%,
+    100% {
       transform: translateX(0) translateY(0) scale(1) rotate(0deg);
     }
     25% {
@@ -939,7 +930,8 @@ footer {
   }
 
   @keyframes wave-animation-reverse {
-    0%, 100% {
+    0%,
+    100% {
       transform: translateX(0) translateY(0) scale(1) rotate(0deg);
     }
     25% {
@@ -957,15 +949,15 @@ footer {
   .section-titles h1 {
     font-size: 60px;
   }
-  
+
   .section-titles h2 {
     font-size: 20px;
   }
-  
+
   #section-1 {
     flex-direction: column-reverse;
   }
-  
+
   #basic-info {
     padding: 10px;
     align-items: center;
@@ -987,7 +979,7 @@ footer {
   #basic-info h3 {
     text-align: center;
   }
-  
+
   #basic-info p {
     text-align: justify;
   }
@@ -995,35 +987,35 @@ footer {
   .edu-card1 {
     flex-direction: column-reverse;
   }
-  
+
   .edu-card2 {
     flex-direction: column;
   }
-  
+
   .edu-photo {
     max-width: 100%;
   }
-  
+
   .edu-info1,
   .edu-info2 {
     width: 90%;
     text-align: center;
   }
-  
+
   .achievements-container {
     grid-template-columns: 1fr;
     gap: 15px;
   }
-  
+
   .achievement-card {
     padding: 15px;
   }
-  
+
   .coursework {
     margin-top: 10px;
     padding: 8px;
   }
-  
+
   .project-description {
     font-size: 13px;
   }
@@ -1033,7 +1025,7 @@ footer {
   #side-menu {
     display: none;
   }
-  
+
   #all-sections {
     margin-left: 5px;
     margin-right: 5px;
@@ -1045,7 +1037,7 @@ footer {
     gap: 8px;
     padding: 10px 8px;
   }
-  
+
   .side-menu-icon {
     height: 25px;
     width: 25px;
